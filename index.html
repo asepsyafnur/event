@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Landrick - Saas & Software Landing Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- tobii css -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/tiny-slider.css"/> 
+    <!-- Animation -->
+    <link href="css/aos.css" rel="stylesheet" type="text/css" />
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    <style>
+        /* color1 #76008A */
+        /* color2 #B69800 */
+        @keyframes zoomIn {
+            0%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .home-slider .carousel-control-next, .home-slider .carousel-control-prev {
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 0px;
+            border: 2px solid #c18021;
+        }
+        .home-slider .carousel-control-next-icon, .home-slider .carousel-control-prev-icon{
+            width: 45% !important;
+        }
+        .home-slider .para-desc{
+            font-size: 1.5rem;
+        }
+        #topnav.nav-sticky .logo h1{
+            color: rgb(60 72 88 / 88%) !important;
+        }
+        #topnav:not(.nav-sticky) .navigation-menu > li > a,
+        #topnav:not(.nav-sticky) .navigation-menu > li:hover > a{
+            color: #fff !important;
+        }
+        .bg-home{
+            animation: zoomIn 5s normal;
+        }
+        .bg-overlay{
+            background-color : #02010261 !important;
+        }
+
+        @keyframes bounceAnim{
+            0%{
+                transform:rotate(269deg);
+            }
+            50%{
+                transform:rotate(260deg);
+            }
+            100%{
+                transform:rotate(269deg);
+            }
+        }
+
+        .bounce_style{
+            animation: bounceAnim 5s infinite;
+        }
+
+        .supported .avatar{
+            width: 11rem;
+        }
+
+    </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="20">
+    <!-- Loader -->
+    <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Loader -->
+    
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="#">
+                   <h1 style="font-size: 1.5rem !important;
+                   color: white;
+                   font-weight: bold;
+                   transform: translateY(16px);">Logo</h1>
+                </a>
+            </div>                 
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu" id="navmenu-nav">
+                    <li class="has-submenu">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#biografi">Biografi</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#lomba">Lomba</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#kontak">Kontak</a>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <section id="home" class="home-slider position-relative" style="max-height: 100vh;">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="bg-home d-flex align-items-center" style="background-image:url('images/event/event/4.jpg')">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="title-heading text-white mt-4">
+                                        <h1 class="display-4 title-dark fw-bold mb-3">Lorem ipsum dolor sit amet.</h1>
+                                        <p class="para-desc para-dark mx-auto text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, unde?</p>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="bg-home d-flex align-items-center" style="background-image:url('images/event/1.jpg')">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="title-heading text-white mt-4">
+                                        <h1 class="display-4 title-dark fw-bold mb-3">Lorem ipsum dolor sit amet.</h1>
+                                        <p class="para-desc para-dark mx-auto text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, odio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="bg-home d-flex align-items-center" style="background-image:url('images/event/2.jpg')">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 text-center">
+                                    <div class="title-heading text-white mt-4">
+                                        <h1 class="display-4 title-dark fw-bold mb-3">Lorem ipsum dolor sit amet.</h1>
+                                        <p class="para-desc para-dark mx-auto text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, odio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section><!--end section-->
+    <!-- Hero End -->
+
+    <section class="section">
+        <div class="container">
+                <div class="features-absolute">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                                <div class="card border-0 text-center p-4 overflow-hidden" style="box-shadow:0 0 15px 5px rgb(60 72 88 / 15%) !important;">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="card-body p-0 mt-4">                                            
+                                                <div class="icons text-primary text-center mx-auto">
+                                                    <i class="uil uil-map d-block rounded h3 mb-0"></i>
+                                                </div>
+                                                <a href="#" class="title h5 text-dark">Lokasi Kegiatan</a>
+                                                <p class="text-muted mt-2">Kota Baubau dan Kabupaten Buton</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card-body p-0 mt-4">                                            
+                                                <div class="icons text-primary text-center mx-auto">
+                                                    <i class="uil uil-user d-block rounded h3 mb-0"></i>
+                                                </div>
+                                                <a href="#" class="title h5 text-dark">Peserta</a>
+                                                <p class="text-muted mt-2">Sulawesi Tenggara dan Se-Indonesia</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card-body p-0 mt-4">                                            
+                                                <div class="icons text-primary text-center mx-auto">
+                                                    <i class="uil uil-calendar-alt d-block rounded h3 mb-0"></i>
+                                                </div>
+                                                <a href="#" class="title h5 text-dark">Jadwal Kegiatan</a>
+                                                <p class="text-muted mt-2">Minggu, 15- 20 Mei 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!--end container--> 
+    </section>
+
+    <section id="biografi">
+        <div class="container mt-100">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-absolute aos-init" style="z-index:-999;left:-6rem;top:16rem;" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="images/shape_2.svg" alt="ksadk">
+                    </div>
+                    <img src="images/event/event/la-karambau.jpg" style="width: 100%;" data-aos="fade-right" data-aos-duration="1000" class="img-fluid shadow rounded aos-init" alt="Sultan Himayatuddin Muhammad Saydi (Oputa Yi Koo)">
+                </div><!--end col-->
+                <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ms-lg-5">
+                        <h4 class="title mb-2 aos-init" data-aos="fade-left" data-aos-duration="1000">Biografi Sultan Himayatuddin Muhammad Saydi (Oputa Yi Koo)</h4>
+                        <p class="text-muted aos-init" data-aos="fade-up" data-aos-duration="1000">Sultan Himayatuddin Muhammad Saydi atau lebih popular dikenal dengan nama Oputa Yi Koo adalah satu-satunya Sultan Buton yang memerintah selama dua periode. Beliau merupakan Sultan Buton ke 20 (1750-1752) dan ke 23 (1760-1763). Oputa Yi Koo merupakan putra dari Sultan Buton ke 13, La Umati Sultan Liauddin Ismail. Oputa Yi Koo melangsungkan perkawinan dengan putri Sultan Zakiuddin Darul Alam (Sultan Buton ke-19) yang bernama Wa Ode Sabanira, yang kemudian mahsyur dikenal dengan nama Baluna Oputa Yi Koo (Jandanya Oputa Yi Koo).</p>
+                        <a href="#" class="mt-3 h6 text-primary aos-init" data-aos="fade-left" data-aos-duration="1000">Baca Selengkapnya <i class="uil uil-angle-right-b"></i></a>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <section class="section" id="lomba">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <h4 class="title mb-4 aos-init" data-aos="fade-left" data-aos-duration="1000">lorem</h4>
+                        <p class="text-muted para-desc mx-auto mb-0 aos-init" data-aos="fade-right" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden aos-init" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="position-relative">
+                            <img src="images/event/event/lomba/5.jpg" class="card-img-top" alt="...">
+                            <div class="overlay bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5 class="mt-2"><a href="#" class="title text-dark">Lomba Napak Tilas</a></h5>
+                            <p class="text-muted">Lomba Napak Tilas di ikuti maksimal 2000
+                                peserta yang akan dibagi menjadi 200
+                                kelompok...</p>
+                            <a href="#" target="_blank" class="text-primary">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden aos-init" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="position-relative">
+                            <img src="images/event/event/lomba/2.jpg" class="card-img-top" alt="...">
+                            <div class="overlay bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5 class="mt-2"><a href="#" class="title text-dark">Lomba Cerita Pendek</a></h5>
+                            <p class="text-muted">Lomba Cerita Pendek terbagi menjadi dua offline dan
+                                Online. Peserta SD/SMP Se Indonesia...</p>
+                            <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#lomba_crtpendek">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden aos-init" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="position-relative">
+                            <img src="images/event/event/lomba/7.jpg" class="card-img-top" alt="...">
+                            <div class="overlay bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5 class="mt-2"><a href="#" class="title text-dark">Lomba Monolog Storytelling</a></h5>
+                            <p class="text-muted">Lomba Monolog Storytelling terbagi menjadi dua
+                                offline dan Online. Peserta SMA dan Mahasiswa Se
+                                Indonesia...</p>
+                            <a href="#" class="text-primary">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-12 mt-4 pt-2 text-center">
+                    <a href="#" class="btn btn-primary aos-init" data-aos="fade-up" data-aos-duration="2200">Lihat Lebih Banyak <i class="uil uil-angle-right-b align-middle"></i></a>
+                </div>
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <!-- CTA Start -->
+    <section class="section bg-cta" data-jarallax='{"speed": 0.5}' style="background: url('images/event/event/artis.jpg') center center;" id="cta">
+        <div class="bg-overlay bg-primary bg-gradient" style="opacity: 0.85;"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title title-dark text-white mb-4">Digital International Conference</h4>
+                        <p class="text-light para-desc para-dark mx-auto">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <a href="#" data-type="youtube" class="play-btn border border-light mt-4 lightbox"><!--  data-id="yba7hPeTSjk" -->
+                            <i data-feather="play" class="fea icon-ex-md text-white title-dark"></i>
+                        </a>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <!-- CTA End -->
+
+    <section id="dekorasi" class="mt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <h4 class="title mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">Dekorasi</h4>
+                        <p class="text-muted para-desc mx-auto mb-0 aos-init" data-aos="fade-up" data-aos-duration="1400">Lorem ipsum dolor sit amet <span class="text-primary fw-bold">Landrick</span> that can provide everything.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+    
+            <div class="row aos-init" data-aos="fade-up" data-aos-duration="1800">
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/2.jpg" alt="1">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Rangka Jalur Event</a></h5>
+                                <h6 class="text-light tag mb-0">Rangka</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/2.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/3.jpg" alt="2">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Pameran</a></h5>
+                                <h6 class="text-light tag mb-0">Pameran</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/3.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/4.jpg" alt="1">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Ruang Makan VIP</a></h5>
+                                <h6 class="text-light tag mb-0">Ruang Makan VIP</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/4.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/5.jpg" alt="1">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Sanitasi</a></h5>
+                                <h6 class="text-light tag mb-0">Sanitasi</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/5.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/6.jpg" alt="1">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Taman</a></h5>
+                                <h6 class="text-light tag mb-0">Taman</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/6.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
+                        <div class="portfolio-box-img position-relative overflow-hidden">
+                            <img class="item-container img-fluid mx-auto" src="images/event/decore/1.jpg" alt="1">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="content">
+                                <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-white title">Design Lokasi</a></h5>
+                                <h6 class="text-light tag mb-0">Design</h6>
+                            </div>
+                            <div class="icons text-center">
+                                <a href="images/event/decore/1.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill lightbox"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-camera fea icon-sm image-icon"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end row-->
+    
+            <div class="row">
+                <div class="col-12 mt-4 pt-2 text-center">
+                    <a href="#" class="btn btn-primary">Lihat Lebih Banyak <i class="uil uil-angle-right-b align-middle"></i></a>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div>
+    </section>
+
+    <section id="artikel" class="mt-100 py-5" style="background: url('images/poly.png') center center no-repeat;background-size: cover;">
+        <div class="container">
+            <div class="row align-items-center mb-4 pb-2">
+                <div class="col-md-8">
+                    <div class="section-title text-center text-md-start">
+                        <h4 class="mb-4 aos-init" data-aos="fade-right" data-aos-duration="1000">Berita & Artikel</h4>
+                        <p class="text-muted mb-0 para-desc aos-init" data-aos="fade-right" data-aos-duration="1400">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-md-4 mt-4 mt-sm-0">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="btn btn-soft-primary aos-init" data-aos="fade-left" data-aos-duration="1000">Lihat Lainnya <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row aos-init" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/event/7.jpg" class="card-img-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5><a href="#" class="card-title title text-dark">Lorem ipsum dolor sit amet</a></h5>
+                            <div class="post-meta d-flex justify-content-between mt-3">
+                                <a href="page-blog-detail.html" class="text-muted readmore">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div>
+                        <div class="author">
+                            <small class="text-light user d-block"><i class="uil uil-user"></i> Lorem, ipsum dolor.</small>
+                            <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/event/8.jpg" class="card-img-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5><a href="#" class="card-title title text-dark">Lorem ipsum dolor sit amet</a></h5>
+                            <div class="post-meta d-flex justify-content-between mt-3">
+                                <a href="page-blog-detail.html" class="text-muted readmore">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div>
+                        <div class="author">
+                            <small class="text-light user d-block"><i class="uil uil-user"></i> Lorem, ipsum</small>
+                            <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="images/event/9.jpg" class="card-img-top" alt="...">
+                            <div class="overlay rounded-top bg-dark"></div>
+                        </div>
+                        <div class="card-body content">
+                            <h5><a href="#" class="card-title title text-dark">Lorem ipsum dolor sit amet</a></h5>
+                            <div class="post-meta d-flex justify-content-between mt-3">
+                                <a href="page-blog-detail.html" class="text-muted readmore">Baca Selengkapnya <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div>
+                        <div class="author">
+                            <small class="text-light user d-block"><i class="uil uil-user"></i> Lorem ipsum dolor</small>
+                            <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <section id="kontak" class="mt-100 pb-5">
+        <div class="container " id="kontak">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <h4 class="title mb-4 aos-init" data-aos="fade-up" data-aos-duration="1000">Kontak & Lokasi</h4>
+                        </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 mt-sm-0 pt-2 pt-sm-0 aos-init" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card rounded shadow border-0">
+                        <div class="card-body py-5">
+                            <h5 class="card-title">Untuk setiap pertanyaan dan dukungan</h5>
+
+                            <div class="custom-form mt-4">
+                                <div id="message"></div>
+                                <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user fea icon-sm icons"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                                    <input name="name" id="name" type="text" class="form-control ps-5" placeholder="First Name :">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail fea icon-sm icons"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                                    <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Your email :">
+                                                </div>
+                                            </div> 
+                                        </div><!--end col-->
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Comments</label>
+                                                <div class="form-icon position-relative">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle fea icon-sm icons"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                                    <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Your Message :"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end row-->
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class="d-grid">
+                                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
+                                                <div id="simple-msg"></div>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </form><!--end form-->
+                            </div><!--end custom-form-->
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-8 col-md-6 p-0 ps-md-3 pe-md-3 aos-init" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card map map-height-two rounded map-gray border-0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style="border:0" class="rounded" allowfullscreen=""></iframe>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title aos-init" data-aos="fade-up" data-aos-duration="1000">Organized By</h4>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row justify-content-center supported">
+                <div class="col-lg-8 col-md-6 text-center">
+                    <img src="images/1.png" class="avatar aos-init" data-aos="fade-right" data-aos-duration="1000" alt="">
+                    <p style="transform:translateY(-15px);" class="aos-init" data-aos="fade-left" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum veniam ex ducimus. A doloribus cum impedit exercitationem magni blanditiis!</p>
+                </div><!--end col-->
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title aos-init" data-aos="fade-up" data-aos-duration="1000">Supported By</h4>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div class="row justify-content-center supported init" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+            </div><!--end row-->
+
+
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title aos-init" data-aos="fade-up" data-aos-duration="1000">Media partner</h4>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div class="row justify-content-center supported init" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-2 col-6 text-center">
+                    <img src="images/1.png" class="avatar" alt="">
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="#" class="logo-footer">
+                        <h1 style="font-size: 1.5rem !important;
+                        color: white;
+                        font-weight: bold;
+                        transform: translateY(16px);">Logo</h1>
+                    </a>
+                    <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, officia.</p>
+                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                        <li class="list-inline-item"><a href="#" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                    </ul><!--end icon-->
+                </div><!--end col-->
+
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 aos-init" data-aos="fade-up" data-aos-duration="1400">
+                    <h5 class="text-light footer-head">Links</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#home" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Home</a></li>
+                        <li><a href="#biografi" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Biografi</a></li>
+                        <li><a href="#lomba" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Lomba</a></li>
+                        <li><a href="#kontak" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-up" data-aos-duration="1800">
+                    <h5 class="text-light footer-head">Kegiatan</h5>
+                    <p class="mt-4">Pameran Benda
+                        Pusaka, Produk Umkm, Makanan
+                        Khas Sultra, Produk Ekonomi
+                        Kreatif, Swab Peserta, Registrasi
+                        Peserta, dan Acara Pelepasan</p>
+                </div><!--end col-->
+                
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-up" data-aos-duration="2200">
+                    <h5 class="text-light footer-head">Kebutuhan</h5>
+                    <p class="mt-4">Panggung, Tenda sarnavil, Sofa dan decor Tamu Vip, Tenda Medis, Toilet</p>
+                </div><!--end col-->
+
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <footer class="footer footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-12 text-center">
+                    <div class="text-sm-start">
+                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Copyright. All right reserved</a>.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <!-- Back to top -->
+
+    
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- polyfills -->
+    <script src="js/gumshoe.polyfills.min.js"></script>
+    <!-- paralax -->
+    <script src="js/parallax.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <!-- tobii js -->
+    <script src="js/tobii.min.js "></script>
+    <!-- Animation -->
+    <script src="js/aos.js "></script>
+    <!-- Icons -->
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+</html>
